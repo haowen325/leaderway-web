@@ -234,6 +234,13 @@ h6 {
     padding: 5px 0;
 }
 
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark);
+    white-space: nowrap;
+}
+
 .nav-list li a:not(.btn-contact)::after {
     content: '';
     position: absolute;
@@ -813,6 +820,13 @@ footer p {
         display: flex;
     }
 
+    .company-name {
+        font-size: 1.15rem;
+        white-space: normal;
+        line-height: 1.2;
+        max-width: 200px;
+    }
+
     /* Mobile Hero Adjustments */
     .hero {
         margin-top: 60px;
@@ -835,13 +849,13 @@ footer p {
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .section-subtitle {
-        margin-bottom: 30px;
-        text-align: justify;
-        /* Better reading block */
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 0.95rem;
     }
 
     .stats {
@@ -897,8 +911,16 @@ footer p {
 
     /* Mobile Card Optimization */
     .capability-card {
-        padding: 20px;
-        /* Reduced from 30px to give content more room */
+        padding: 25px 20px;
+    }
+
+    .capability-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    .capability-card p {
+        font-size: 0.9rem;
     }
 
     .process-step {
