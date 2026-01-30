@@ -4,29 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0056b3">
     <title>力偉板金機械股份有限公司 | 專業 CNC 折床、雷射切割、NCT 沖床加工</title>
     <meta name="description" content="力偉板金機械股份有限公司擁有數十年專業經驗，提供精密雷射切割、NCT 電腦沖床、CNC 折床加工與焊接組裝服務。位於台中神岡，是您最信賴的金屬加工合作夥伴。">
+    <meta name="keywords" content="CNC折床,雷射切割,NCT沖床,板金加工,台中,神岡">
+    <meta name="author" content="力偉板金機械股份有限公司">
 
-    <!-- Google Fonts -->
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="力偉板金機械股份有限公司 | 專業 CNC 折床、雷射切割、NCT 沖床加工">
+    <meta property="og:description" content="專業精密板金加工服務，提供 CNC 折床、雷射切割、NCT 沖孔加工與焊接組裝。">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://example.com/assets/logo.jpg">
+
+    <!-- Google Fonts with Preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Oswald:wght@500;700&display=swap"
+        as="style">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Oswald:wght@500;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "力偉板金機械股份有限公司",
+        "image": "https://example.com/assets/logo.jpg",
+        "description": "專業精密板金加工服務公司",
+        "url": "https://example.com",
+        "telephone": "+886425278118",
+        "email": "Lw-Service@leaderway.com.tw",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "台中市神岡區中山路214巷8-2號",
+            "addressLocality": "台中市",
+            "addressCountry": "TW"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        }
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Skip to Main Content Link (Accessibility) -->
+    <a href="#main-content" class="skip-link">跳至主要內容</a>
 
     <!-- Navigation -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
-            <a href="#" class="logo" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
-                <img src="assets/logo.jpg" alt="力偉板金 Logo">
+            <a href="#home" class="logo" style="display:flex; align-items:center; gap:10px; text-decoration:none;"
+                aria-label="力偉板金機械 首頁">
+                <img src="assets/logo.jpg" alt="力偉板金 Logo" loading="lazy">
                 <span class="company-name">力偉板金機械股份有限公司</span>
             </a>
-            <nav class="nav">
+            <nav class="nav" aria-label="主導航">
                 <ul class="nav-list">
                     <li><a href="#home">首頁</a></li>
                     <li><a href="#capabilities">服務項目</a></li>
@@ -34,7 +76,7 @@
                     <li><a href="#contact" class="btn-contact">聯絡我們</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu-toggle">
+            <div class="mobile-menu-toggle" aria-label="打開導航菜單" aria-expanded="false" aria-controls="mobile-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,7 +85,7 @@
     </header>
 
     <!-- Mobile Navigation Overlay -->
-    <div class="mobile-nav-overlay">
+    <div class="mobile-nav-overlay" id="mobile-nav" role="navigation" aria-label="行動導航">
         <ul class="mobile-nav-list">
             <li><a href="#home">首頁</a></li>
             <li><a href="#capabilities">服務項目</a></li>
@@ -53,15 +95,9 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" id="main-content">
+        <div class="hero-bg-image" style="background-image: url('assets/portfolio/機器照-1-cleaned.png');"></div>
         <div class="hero-overlay"></div>
-        <!-- Abstract Tech Decoration -->
-        <!-- <div class="hero-decoration">
-            <div class="tech-circle circle-1"></div>
-            <div class="tech-circle circle-2"></div>
-            <div class="tech-circle circle-3"></div>
-            <div class="tech-crosshair"></div>
-        </div> -->
 
         <div class="hero-content">
             <h1>追求極致精度的板金工藝</h1>
@@ -79,16 +115,16 @@
             <div class="capabilities-grid">
                 <div class="capability-card">
                     <div class="icon">
-                        <!-- SVG Icon for CNC Bending -->
+                        <!-- SVG Icon for Stamping -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M2 20h20" />
-                            <path d="M5 20V8h14v12" />
-                            <path d="M5 8l7-6 7 6" />
+                            <path d="M6 9v12h12V9" />
+                            <path d="M6 9l6-5 6 5" />
+                            <line x1="12" y1="14" x2="12" y2="21" />
                         </svg>
                     </div>
-                    <h3>CNC 折床加工</h3>
-                    <p>引進先進 CNC 折床設備，精準控制折彎角度與尺寸，無論是簡單折彎還是複雜成型，皆能完美呈現。</p>
+                    <h3>NCT 電腦沖床</h3>
+                    <p>配備專業電腦沖孔機，提供精密平板沖孔加工，靈活對應各種複雜孔型與板金輪廓，無需開模即可快速生產。</p>
                 </div>
 
                 <div class="capability-card">
@@ -110,22 +146,60 @@
 
                 <div class="capability-card">
                     <div class="icon">
-                        <!-- SVG Icon for Stamping -->
+                        <!-- SVG Icon for CNC Bending -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M6 9v12h12V9" />
-                            <path d="M6 9l6-5 6 5" />
-                            <line x1="12" y1="14" x2="12" y2="21" />
+                            <path d="M2 20h20" />
+                            <path d="M5 20V8h14v12" />
+                            <path d="M5 8l7-6 7 6" />
                         </svg>
                     </div>
-                    <h3>NCT 電腦沖床</h3>
-                    <p>配備專業電腦沖孔機，提供精密平板沖孔加工，靈活對應各種複雜孔型與板金輪廓，無需開模即可快速生產。</p>
+                    <h3>CNC 折床加工</h3>
+                    <p>引進先進 CNC 折床設備，精準控制折彎角度與尺寸，無論是簡單折彎還是複雜成型，皆能完美呈現。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section REMOVED -->
+    <!-- Portfolio Section (Temporarily Hidden)
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">精選成品展示</h2>
+            <p class="section-subtitle">展示我們在不同領域的高精度板金加工成果</p>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="assets/portfolio/complex_metal_chassis.png" alt="精密鈑金機箱" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3>精密鈑金機箱</h3>
+                        <p>多軸折彎與散熱孔加工</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/portfolio/portfolio_part_2_1768061010076.png" alt="藝術雷射切割" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3>藝術雷射切割</h3>
+                        <p>高難度花紋精準切割</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/portfolio/portfolio_part_3_1768061029682.png" alt="工業配電箱" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3>工業配電箱</h3>
+                        <p>結構堅固、防塵防水設計</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/portfolio/portfolio_part_4_1768061046572.png" alt="精密五金零件" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3>精密五金零件</h3>
+                        <p>多道折彎加工</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
 
     <!-- About Us Section -->
     <section id="about" class="section">
@@ -133,29 +207,73 @@
             <div class="about-layout">
                 <div class="about-text">
                     <h2 class="section-title text-left">關於我們</h2>
-                    <p><strong>力偉板金機械股份有限公司</strong> 成立於 1984
-                        年，專注於高品質的精密板金加工。我們以「卓越創新，前瞻未來」作為營運目標，承襲台灣優良的企業營運基石，奠定長年穩健經營的基礎。</p>
-                    <p>多年來，我們不斷擴充產能與服務範圍：</p>
-                    <ul
-                        style="list-style-type: disc; padding-left: 20px; color: var(--text-light); margin-bottom: 20px;">
-                        <li>1984年 公司成立</li>
-                        <li>2010年 購置700坪廠房用地</li>
-                        <li>2014年 新二廠正式投入生產</li>
-                    </ul>
-                    <p>我們服務的客戶涵蓋電子設備、工具機械、食品加工機械、木工機械及各式機器設備廠。從機械外罩、配電箱到各類零配件，我們提供最專業的設計與製造服務。</p>
+                    <p class="lead-text"><strong>力偉板金 —— 職人精神與現代管理的完美結合</strong></p>
+                    <p>自 1984 年創立以來，力偉板金深耕產業 40 年。我們深知在快速變動的商場中，「速度」就是競爭力。大廠難以配合的彈性、趕不出來的急件，在力偉，我們用極致的靈活性為客戶贏得先機。</p>
+
+                    <p>多年來，我們與許多客戶建立了長達數十年的合作關係。這不只是商業上的代工作業，更是並肩作戰的夥伴情誼。這份跨越世代的信任，是我們最珍貴的資產，也是對品質最真實的背書。</p>
+
+                    <p>我們深信傳統產業不代表守舊。力偉不斷優化內部作業流程，致力於交期更精準。我們在傳承精湛手工藝的同時，也積極導入系統化管理，讓客戶感受到更專業、更省心的服務體驗。</p>
+
                     <div class="stats">
                         <div class="stat-item">
                             <span class="stat-number">40+</span>
                             <span class="stat-label">年產業經驗</span>
                         </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">在地生產</span>
+                        </div>
                     </div>
                 </div>
                 <div class="about-images">
-                    <img src="assets/portfolio/廠區照-1.jpg" alt="廠區外觀" class="about-img-1">
-                    <img src="assets/portfolio/機器照-1.jpg" alt="工廠設備" class="about-img-2">
+                    <div class="about-img-wrapper main-img">
+                        <img src="assets/portfolio/廠區照-1.jpg" alt="力偉板金廠區外觀" loading="lazy">
+                        <span class="img-caption">專業加工廠區</span>
+                    </div>
+                    <div class="about-img-wrapper sub-img">
+                        <img src="assets/portfolio/機器照-1-cleaned.png" alt="先進雷射設備" loading="lazy">
+                        <span class="img-caption">高功率雷射切割機</span>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Quality & Certification Section -->
+    <section id="quality" class="section bg-light">
+        <div class="container">
+            <div class="quality-layout">
+                <div class="quality-content">
+                    <h2 class="section-title text-left">國際品質認證</h2>
+                    <p class="section-subtitle text-left">嚴謹的標準化流程，確保產品具備穩定的高品質表現。</p>
+
+                    <div class="certification-points">
+                        <div class="cert-point">
+                            <div class="cert-icon">ISO</div>
+                            <div class="cert-text">
+                                <h4>9001:2015 國際品質認證</h4>
+                                <p>嚴格遵循國際品質管理系統，確保加工精度與穩定品質。</p>
+                            </div>
+                        </div>
+                        <div class="cert-point">
+                            <div class="cert-icon">✓</div>
+                            <div class="cert-text">
+                                <h4>製程標準化管理</h4>
+                                <p>透明報價與精準交期，讓客戶安心託付每一份訂單。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quality-image">
+                        <div class="certificate-container">
+                            <!-- Left Cert (Chinese) - Fixing order as requested -->
+                            <img src="assets/certificates/iso_cert_tw.png" alt="ISO 9001:2015 證書 (中文版)"
+                                class="clean-cert-img" loading="lazy">
+                            <!-- Right Cert (English) -->
+                            <img src="assets/certificates/iso_cert_en.png" alt="ISO 9001:2015 Certificate (English)"
+                                class="clean-cert-img" loading="lazy">
+                        </div>
+                    </div>
     </section>
 
     <!-- Service Process Section -->
@@ -204,7 +322,8 @@
                     <div class="contact-item">
                         <h4>公司地址</h4>
                         <p><a href="https://www.google.com/maps/place/429%E8%87%BA%E4%B8%AD%E5%B8%82%E7%A5%9E%E5%B2%A1%E5%8D%80%E4%B8%AD%E5%B1%B1%E8%B7%AF214%E5%B7%B78-+2%E8%99%9F/@24.2495745,120.6929943,3a,75y,304.89h,96.08t/data=!3m7!1e1!3m5!1sh8Ki79_IXEAi8WJrmlxSbA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-6.082719047187737%26panoid%3Dh8Ki79_IXEAi8WJrmlxSbA%26yaw%3D304.8897630572468!7i16384!8i8192!4m15!1m8!3m7!1s0x346910b44313005f:0x4455476e9c6a368c!2zNDI56Ie65Lit5biC56We5bKh5Y2A5Lit5bGx6LevMjE05be3OC0gMuiZnw!3b1!8m2!3d24.2494732!4d120.693059!16s%2Fg%2F11qbbm_mf4!3m5!1s0x346910b44313005f:0x4455476e9c6a368c!8m2!3d24.2494732!4d120.693059!16s%2Fg%2F11qbbm_mf4?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
-                                target="_blank" style="text-decoration: underline;">台中市神岡區中山路214巷8-2號</a></p>
+                                target="_blank" rel="noopener noreferrer"
+                                style="text-decoration: underline;">台中市神岡區中山路214巷8-2號</a></p>
                     </div>
                     <div class="contact-item">
                         <h4>聯絡電話</h4>
@@ -227,21 +346,25 @@
                 <!-- Map Column -->
                 <div class="contact-map">
                     <iframe width="100%" height="100%" style="border:0; min-height: 400px;" loading="lazy"
-                        allowfullscreen
+                        allowfullscreen="allowfullscreen" aria-label="公司地址在 Google 地圖上的位置" title="力偉板金機械股份有限公司位置地圖"
+                        referrerpolicy="no-referrer-when-downgrade"
                         src="https://maps.google.com/maps?q=24.2495745,120.6929943&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
             </div>
         </div>
-    </section>
+        </secReturn to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="返回頂部" title="返回頂部">↑</button>
 
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 力偉板金機械股份有限公司. 版權所有.</p>
-        </div>
-    </footer>
+    <footer class=" footer">
+            <div class="container">
+                <p>&copy; 2026 力偉板金機械股份有限公司. 版權所有.</p>
+            </div>
+        </footer>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
