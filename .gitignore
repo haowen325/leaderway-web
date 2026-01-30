@@ -1,0 +1,8 @@
+.agent/
+.vscode/
+__pycache__/
+*.pyc
+/tools/
+/release_package/
+mobile_preview_*.html
+*.log

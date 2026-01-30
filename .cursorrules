@@ -1,0 +1,57 @@
+# 🏭 Project Context: Leaderway Sheet Metal (力偉板金)
+
+# 1. Role & Identity
+- **User**: Alvin (Manager).
+- **Location**: Taichung, Taiwan (Shengang Dist).
+- **Email**: alvin@leaderway.com.tw
+- **System**: Antigravity Automation System.
+
+# 2. 🛡️ PRIME DIRECTIVE: LINE Approval Protocol
+**CRITICAL**: You possess "Safety Awareness".
+For ANY automation task involving **sensitive operations** (File Delete, DB Drop, API Bulk Send, External Charges), you MUST enforce the `approval_lib` workflow.
+
+## Mandatory Code Pattern
+If execution is risky, insert this logic:
+```python
+import approval_lib
+# ⛔ BLOCKING ACTION: Request Manager Approval
+action_details = "Attempting to DELETE file: [Target]"
+if not approval_lib.request_approval(action_details):
+    print(f"🚫 Action Denied by Alvin: {action_details}")
+    exit(1)
+print(f"✅ Action Approved: {action_details}")
+```
+
+# 3. Essential Data IDs (READ ONLY)
+- **Admin Folder**: `1BxpygMKJuuWOezv0Y815IWsF3uOXzpR8`
+- **Public Folder**: `17dgJWbfbN6sYTNKhHCIMs-RjJV8N4inR`
+- **Master Sheet (AI助理資料-全)**: `1N8jR5nQyN4GE_gA53QSZu-FGBj5b80Rke59i6AWQSO0`
+- **Hardware Vendors**: `1ctnTdZ5hvND90pEwhAM5NuztgXvR9ALe6GaihkBA648`
+- **Laser Pricing**: `1PcIel97csTZpFAmn2v3TuSAlfundh6IMGYYZoX6XSGQ`
+- **Petty Cash**: `1-6PHYkYqT6f5DGIqZNOyYEhrmJ1_1cAqMKjhGhuhoRY`
+
+# 4. Tech Stack & Architecture
+- **Environment**: Python, Google Apps Script (GAS), n8n.
+- **Hardware**: Amada Pega 367 (04PC controller).
+- **Architecture Rules**: 
+    - **Context Awareness**: When modifying crawler/GAS, always respect existing "Tiered Search" (分層搜索) logic.
+    - **Channel Separation**: Maintain distinct LINE Bot channels.
+- **Security**: NEVER hardcode tokens. Use `os.getenv` or `PropertiesService`.
+
+# 5. Execution Rules (Output Format)
+- **Language**: Strictly **Traditional Chinese (繁體中文)**.
+- **Style**: Terse, expert-level.
+- **Code Delivery**: 
+    - Every update MUST include the **"Full Menu"** (function summary).
+    - Provide **Complete, 1-Click Copyable Code** (no partial snippets).
+
+# 6. 🛡️ Site Reliability Protocol (SRE)
+**MANDATORY**: For every active project, you MUST maintain a `check_integrity.py` file.
+
+## Auto-Maintenance Rule
+When analyzing the codebase, if `check_integrity.py` is missing or outdated, you MUST generate it using this logic:
+1.  **Mandatory Core**: Always check for `approval_lib.py` and `config_gas.json`.
+2.  **Project Core**: Automatically scan the root directory for critical files based on extension (`.py`, `.gs`, `.xls*`, `.json`).
+3.  **Output**: Write a `REQUIRED_FILES` list specific to that project.
+
+**Goal**: Ensure users can verify environment consistency across different machines with one click.

@@ -1,0 +1,14 @@
+# Robots.txt for 力偉板金機械股份有限公司
+# Allow search engines to crawl and index the website
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /*.js
+Disallow: /*.css
+
+# Specify sitemap location
+Sitemap: https://example.com/sitemap.xml
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
