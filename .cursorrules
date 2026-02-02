@@ -1,10 +1,9 @@
 # 🏭 Project Context: Leaderway Sheet Metal (力偉板金)
 
 # 1. Role & Identity
-- **User**: Alvin (Manager).
+- **Company**: Leaderway Sheet Metal Co., Ltd. (力偉板金機械股份有限公司)
 - **Location**: Taichung, Taiwan (Shengang Dist).
-- **Email**: alvin@leaderway.com.tw
-- **System**: Antigravity Automation System.
+- **Website**: www.leaderway.com.tw
 
 # 2. 🛡️ PRIME DIRECTIVE: LINE Approval Protocol
 **CRITICAL**: You possess "Safety Awareness".
@@ -17,22 +16,20 @@ import approval_lib
 # ⛔ BLOCKING ACTION: Request Manager Approval
 action_details = "Attempting to DELETE file: [Target]"
 if not approval_lib.request_approval(action_details):
-    print(f"🚫 Action Denied by Alvin: {action_details}")
+    print(f"🚫 Action Denied: {action_details}")
     exit(1)
 print(f"✅ Action Approved: {action_details}")
 ```
 
 # 3. Essential Data IDs (READ ONLY)
-- **Admin Folder**: `1BxpygMKJuuWOezv0Y815IWsF3uOXzpR8`
-- **Public Folder**: `17dgJWbfbN6sYTNKhHCIMs-RjJV8N4inR`
-- **Master Sheet (AI助理資料-全)**: `1N8jR5nQyN4GE_gA53QSZu-FGBj5b80Rke59i6AWQSO0`
-- **Hardware Vendors**: `1ctnTdZ5hvND90pEwhAM5NuztgXvR9ALe6GaihkBA648`
-- **Laser Pricing**: `1PcIel97csTZpFAmn2v3TuSAlfundh6IMGYYZoX6XSGQ`
-- **Petty Cash**: `1-6PHYkYqT6f5DGIqZNOyYEhrmJ1_1cAqMKjhGhuhoRY`
+# ⚠️ Configure your own Google Drive IDs in a local config file
+# Example: Create a `config_local.json` with your folder/sheet IDs
+# - Admin Folder ID
+# - Public Folder ID
+# - Master Sheet ID
 
 # 4. Tech Stack & Architecture
 - **Environment**: Python, Google Apps Script (GAS), n8n.
-- **Hardware**: Amada Pega 367 (04PC controller).
 - **Architecture Rules**: 
     - **Context Awareness**: When modifying crawler/GAS, always respect existing "Tiered Search" (分層搜索) logic.
     - **Channel Separation**: Maintain distinct LINE Bot channels.

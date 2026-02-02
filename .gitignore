@@ -6,3 +6,17 @@ __pycache__/
 /release_package/
 mobile_preview_*.html
 *.log
+
+# Sensitive configuration files (use config_gas.example.json as template)
+config_gas.json
+
+# Temporary files
+temp_*.jpg
+temp_*.png
+
+# Development reference files
+assets/company_data.txt
+Liwei-release_package/assets/company_data.txt
+
+# Archive files
+*.rar

@@ -10,7 +10,7 @@ import sys
 REQUIRED_FILES = [
     # 1. Mandatory Core (Global)
     "approval_lib.py",
-    "config_gas.json",
+    "config_gas.example.json",  # Template file (copy to config_gas.json and fill in your URL)
 
     # 2. Project Core (Web Frontend)
     "index.html",
@@ -18,12 +18,6 @@ REQUIRED_FILES = [
     "script.js",
     "robots.txt",
     "sitemap.xml",
-
-    # 3. Project Core (Tools & Scripts)
-    "tools/process_certs.ps1",
-    "tools/process_certs_safe.ps1",
-    "tools/process_new_certs.ps1",
-    "tools/processor.html"
 ]
 
 def check_integrity():

@@ -33,6 +33,7 @@ def request_approval(title, context_str, project_name="Python Script", timeout=3
     gas_url = _load_gas_url()
     if not gas_url:
         print("❌ Error: config_gas.json not found or missing 'gas_url'.")
+        print("   Hint: Copy config_gas.example.json to config_gas.json and fill in your GAS URL.")
         return False
         
     request_id = str(uuid.uuid4())

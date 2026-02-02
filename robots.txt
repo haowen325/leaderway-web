@@ -3,12 +3,9 @@
 
 User-agent: *
 Allow: /
-Disallow: /assets/
-Disallow: /*.js
-Disallow: /*.css
 
 # Specify sitemap location
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://www.leaderway.com.tw/sitemap.xml
 
 # Crawl delay to prevent server overload
 Crawl-delay: 1
