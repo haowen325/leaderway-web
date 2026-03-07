@@ -17,15 +17,12 @@
     <meta property="og:url" content="https://www.leaderway.com.tw">
     <meta property="og:image" content="https://www.leaderway.com.tw/assets/logo.jpg">
 
-    <!-- Google Fonts with Preload -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Oswald:wght@500;700&display=swap"
-        as="style">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Oswald:wght@500;700&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'">
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -54,18 +51,68 @@
         }
     }
     </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "報價需要提供什麼資料？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "請提供加工圖面（CAD 檔案或 PDF 皆可）、材質、數量與交期需求。如有特殊表面處理需求（如烤漆、電鍍），也請一併說明，我們將盡速為您報價。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "可以處理哪些材質？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "我們主要加工黑鐵（SPHC / SS400 等）及不鏽鋼（SUS 304 / 430 等）。這兩大類材質涵蓋了絕大多數板金加工需求。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "交期大概多久？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "一般訂單交期約 7～14 個工作天，視數量與製程複雜度而定。急件可配合加速處理，歡迎來電討論。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "可以只做少量或單件嗎？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "可以。我們從打樣、少量客製到穩定批量生產都能彈性配合，每一件都以相同品質標準製作。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "沒有圖面，可以協助處理嗎？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "如果您有實品或草圖，我們可以協助丈量與繪製加工圖。建議先來電或 Email 與我們討論需求，再由工程人員評估。"
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
     <!-- Skip to Main Content Link (Accessibility) -->
-    <a href="#main-content" class="skip-link">跳至主要內容</a>
+    <a href="#capabilities" class="skip-link">跳至主要內容</a>
 
     <!-- Navigation -->
     <header class="header" role="banner">
         <div class="container">
             <a href="#home" class="logo" style="display:flex; align-items:center; gap:10px; text-decoration:none;"
                 aria-label="力偉板金機械 首頁">
-                <img src="assets/logo.jpg" alt="力偉板金 Logo" loading="lazy">
+                <img src="assets/logo.jpg" alt="力偉板金 Logo">
                 <span class="company-name">力偉板金機械股份有限公司</span>
             </a>
             <nav class="nav" aria-label="主導航">
@@ -161,6 +208,52 @@
         </div>
     </section>
 
+    <!-- Equipment Specs Section -->
+    <section id="equipment" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">加工設備與能力</h2>
+            <p class="section-subtitle">完整的設備陣容，滿足各類板金加工需求</p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="12" y1="2" x2="12" y2="8.5" />
+                            <line x1="12" y1="15.5" x2="12" y2="22" />
+                        </svg>
+                        <h3>雷射切割機</h3>
+                    </div>
+                    <ul class="spec-list">
+                        <li><span class="spec-label">最大板材尺寸</span><span class="spec-value">1525 × 3050 mm</span></li>
+                        <li><span class="spec-label">最大切割厚度</span><span class="spec-value">25 mm（黑鐵）</span></li>
+                        <li><span class="spec-label">適用材質</span><span class="spec-value">黑鐵、不鏽鋼</span></li>
+                    </ul>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 20h20" />
+                            <path d="M5 20V8h14v12" />
+                            <path d="M5 8l7-6 7 6" />
+                        </svg>
+                        <h3>CNC 折床</h3>
+                    </div>
+                    <ul class="spec-list">
+                        <li><span class="spec-label">最大折彎長度</span><span class="spec-value">4,000 mm（4M）</span></li>
+                        <li><span class="spec-label">最大加壓噸數</span><span class="spec-value">250 Ton</span></li>
+                        <li><span class="spec-label">適用材質</span><span class="spec-value">黑鐵、不鏽鋼</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Portfolio Section (Temporarily Hidden)
     <section id="portfolio" class="section bg-light">
         <div class="container">
@@ -239,6 +332,64 @@
         </div>
     </section>
 
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">為什麼選擇力偉</h2>
+            <p class="section-subtitle">40 年深耕板金產業，我們用實力贏得信賴</p>
+
+            <div class="why-us-grid">
+                <div class="why-us-card">
+                    <div class="why-us-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h3>急件彈性配合</h3>
+                    <p>大廠做不到的速度，我們做到。急件、插單彈性調度，幫客戶搶時間、搶市場。</p>
+                </div>
+
+                <div class="why-us-card">
+                    <div class="why-us-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>品質穩定可靠</h3>
+                    <p>ISO 9001 認證把關，從進料到出貨層層檢驗，確保每一件成品都符合客戶要求。</p>
+                </div>
+
+                <div class="why-us-card">
+                    <div class="why-us-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>長期合作信賴</h3>
+                    <p>眾多客戶合作超過十年以上，跨越世代的信任關係，是對品質與服務最好的證明。</p>
+                </div>
+
+                <div class="why-us-card">
+                    <div class="why-us-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                    </div>
+                    <h3>少量多樣到量產</h3>
+                    <p>從客製化打樣到穩定批量生產，不論數量多寡，我們都以相同標準用心處理。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Quality & Certification Section -->
     <section id="quality" class="section bg-light">
         <div class="container">
@@ -266,14 +417,15 @@
 
                     <div class="quality-image">
                         <div class="certificate-container">
-                            <!-- Left Cert (Chinese) - Fixing order as requested -->
                             <img src="assets/certificates/iso_cert_tw.png" alt="ISO 9001:2015 證書 (中文版)"
                                 class="clean-cert-img" loading="lazy">
-                            <!-- Right Cert (English) -->
                             <img src="assets/certificates/iso_cert_en.png" alt="ISO 9001:2015 Certificate (English)"
                                 class="clean-cert-img" loading="lazy">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Service Process Section -->
@@ -307,6 +459,51 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title">常見問題</h2>
+            <p class="section-subtitle">客戶最常詢問的問題，為您整理如下</p>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">報價需要提供什麼資料？</summary>
+                    <div class="faq-answer">
+                        <p>請提供加工圖面（CAD 檔案或 PDF 皆可）、材質、數量與交期需求。如有特殊表面處理需求（如烤漆、電鍍），也請一併說明，我們將盡速為您報價。</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">可以處理哪些材質？</summary>
+                    <div class="faq-answer">
+                        <p>我們主要加工黑鐵（SPHC / SS400 等）及不鏽鋼（SUS 304 / 430 等）。這兩大類材質涵蓋了絕大多數板金加工需求。</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">交期大概多久？</summary>
+                    <div class="faq-answer">
+                        <p>一般訂單交期約 7～14 個工作天，視數量與製程複雜度而定。急件可配合加速處理，歡迎來電討論。</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">可以只做少量或單件嗎？</summary>
+                    <div class="faq-answer">
+                        <p>可以。我們從打樣、少量客製到穩定批量生產都能彈性配合，每一件都以相同品質標準製作。</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">沒有圖面，可以協助處理嗎？</summary>
+                    <div class="faq-answer">
+                        <p>如果您有實品或草圖，我們可以協助丈量與繪製加工圖。建議先來電或 Email 與我們討論需求，再由工程人員評估。</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Us Section -->
     <section id="contact" class="section bg-dark text-white">
         <div class="container">
@@ -321,7 +518,7 @@
                     </div>
                     <div class="contact-item">
                         <h4>公司地址</h4>
-                        <p><a href="https://www.google.com/maps/place/429%E8%87%BA%E4%B8%AD%E5%B8%82%E7%A5%9E%E5%B2%A1%E5%8D%80%E4%B8%AD%E5%B1%B1%E8%B7%AF214%E5%B7%B78-+2%E8%99%9F/@24.2495745,120.6929943,3a,75y,304.89h,96.08t/data=!3m7!1e1!3m5!1sh8Ki79_IXEAi8WJrmlxSbA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-6.082719047187737%26panoid%3Dh8Ki79_IXEAi8WJrmlxSbA%26yaw%3D304.8897630572468!7i16384!8i8192!4m15!1m8!3m7!1s0x346910b44313005f:0x4455476e9c6a368c!2zNDI56Ie65Lit5biC56We5bKh5Y2A5Lit5bGx6LevMjE05be3OC0gMuiZnw!3b1!8m2!3d24.2494732!4d120.693059!16s%2Fg%2F11qbbm_mf4!3m5!1s0x346910b44313005f:0x4455476e9c6a368c!8m2!3d24.2494732!4d120.693059!16s%2Fg%2F11qbbm_mf4?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
+                        <p><a href="https://www.google.com/maps/place/429%E8%87%BA%E4%B8%AD%E5%B8%82%E7%A5%9E%E5%B2%A1%E5%8D%80%E4%B8%AD%E5%B1%B1%E8%B7%AF214%E5%B7%B78-+2%E8%99%9F/@24.2494732,120.693059,17z"
                                 target="_blank" rel="noopener noreferrer"
                                 style="text-decoration: underline;">台中市神岡區中山路214巷8-2號</a></p>
                     </div>
@@ -360,7 +557,24 @@
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="container">
-            <p>&copy; 2026 力偉板金機械股份有限公司. 版權所有.</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-company">力偉板金機械股份有限公司</p>
+                    <p>統一編號：22068952</p>
+                    <p>台中市神岡區中山路214巷8-2號</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">首頁</a>
+                    <a href="#capabilities">服務項目</a>
+                    <a href="#equipment">加工設備</a>
+                    <a href="#about">關於我們</a>
+                    <a href="#faq">常見問題</a>
+                    <a href="#contact">聯絡我們</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 力偉板金機械股份有限公司. 版權所有.</p>
+            </div>
         </div>
     </footer>
 
