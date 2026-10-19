@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0056b3">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
     <title>力偉板金機械股份有限公司 | 專業 CNC 折床、雷射切割、NCT 沖床加工</title>
     <meta name="description" content="力偉板金機械股份有限公司擁有數十年專業經驗，提供精密雷射切割、NCT 電腦沖床、CNC 折床加工與焊接組裝服務。位於台中神岡，是您最信賴的金屬加工合作夥伴。">
     <meta name="keywords" content="CNC折床,雷射切割,NCT沖床,板金加工,台中,神岡">
@@ -15,7 +18,12 @@
     <meta property="og:description" content="專業精密板金加工服務，提供 CNC 折床、雷射切割、NCT 沖孔加工與焊接組裝。">
     <meta property="og:type" content="business.business">
     <meta property="og:url" content="https://www.leaderway.com.tw">
-    <meta property="og:image" content="https://www.leaderway.com.tw/assets/logo.jpg">
+    <meta property="og:image" content="https://www.leaderway.com.tw/assets/og-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="力偉板金機械股份有限公司 廠區">
+    <meta property="og:locale" content="zh_TW">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -112,7 +120,7 @@
         <div class="container">
             <a href="#home" class="logo" style="display:flex; align-items:center; gap:10px; text-decoration:none;"
                 aria-label="力偉板金機械 首頁">
-                <img src="assets/logo.jpg" alt="力偉板金 Logo">
+                <img src="assets/logo.svg" alt="力偉板金 Logo" width="60" height="60">
                 <span class="company-name">力偉板金機械股份有限公司</span>
             </a>
             <nav class="nav" aria-label="主導航">
@@ -123,11 +131,11 @@
                     <li><a href="#contact" class="btn-contact">聯絡我們</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu-toggle" aria-label="打開導航菜單" aria-expanded="false" aria-controls="mobile-nav">
+            <button type="button" class="mobile-menu-toggle" aria-label="打開導航選單" aria-expanded="false" aria-controls="mobile-nav">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </header>
 
@@ -143,7 +151,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-bg-image" style="background-image: url('assets/portfolio/machine_hero_cleaned.png');"></div>
+        <div class="hero-bg-image" style="background-image: url('assets/portfolio/machine_hero_cleaned.webp');"></div>
         <div class="hero-overlay"></div>
 
         <div class="hero-content">
@@ -320,11 +328,11 @@
                 </div>
                 <div class="about-images">
                     <div class="about-img-wrapper main-img">
-                        <img src="assets/portfolio/factory_main.jpg" alt="力偉板金廠區外觀" loading="lazy">
+                        <img src="assets/portfolio/factory_main.webp" alt="力偉板金廠區外觀" loading="lazy">
                         <span class="img-caption">專業加工廠區</span>
                     </div>
                     <div class="about-img-wrapper sub-img">
-                        <img src="assets/portfolio/machine_hero_cleaned.png" alt="先進雷射設備" loading="lazy">
+                        <img src="assets/portfolio/machine_hero_cleaned.webp" alt="先進雷射設備" loading="lazy">
                         <span class="img-caption">高功率雷射切割機</span>
                     </div>
                 </div>

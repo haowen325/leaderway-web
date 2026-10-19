@@ -144,7 +144,7 @@ img {
 
 .logo img {
     height: 60px;
-    width: auto;
+    width: 60px;
 }
 
 .company-name {
@@ -199,6 +199,9 @@ img {
 
 .mobile-menu-toggle {
     display: none;
+    background: none;
+    border: 0;
+    padding: 0;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -1231,6 +1234,7 @@ footer p {
 
     .logo img {
         height: 40px;
+        width: 40px;
     }
 
     /* Hero */
@@ -1475,4 +1479,9 @@ footer p {
     .stat-item {
         align-items: center;
     }
+}
+
+.mobile-menu-toggle:focus-visible {
+    outline: 3px solid var(--primary-blue);
+    outline-offset: 4px;
 }

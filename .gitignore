@@ -16,7 +16,20 @@ temp_*.png
 
 # Development reference files
 assets/company_data.txt
-Liwei-release_package/assets/company_data.txt
 
-# Archive files
+# 壓縮檔：GitHub Pages 會把 repo 每個檔案放上網，一律不進 git
 *.rar
+*.zip
+*.7z
+
+# 本機工具與說明，不是網站內容，不放上網
+*.py
+config_gas.example.json
+CLAUDE.md
+PROJECT_INFO.md
+.cursorrules
+/Liwei-release_package/
+/_archived_certificates/
+/_ai_generated_broken/
+/assets/certificates/
+力偉板金機械股份有限公司*.png
